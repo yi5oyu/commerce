@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Commerce (local)",
+      "request": "launch",
+      "mainClass": "io.github.yi5oyu.commerce.CommerceApplication",
+      "cwd": "${workspaceFolder}/backend",
+      "env": { "SPRING_PROFILES_ACTIVE": "local" }
+    }
+  ]
+}

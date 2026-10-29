@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: commerce
+  jpa:
+    hibernate:
+      ddl-auto: validate
