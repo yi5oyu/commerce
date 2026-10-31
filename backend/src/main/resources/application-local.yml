@@ -3,3 +3,8 @@ spring:
     url: jdbc:postgresql://localhost:5432/commerce
     username: commerce
     password: local
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true

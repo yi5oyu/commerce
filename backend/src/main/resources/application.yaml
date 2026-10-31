@@ -1,6 +1,16 @@
 spring:
   application:
     name: commerce
+  autoconfigure:
+    # 기본 사용자(임시 비밀번호 로그) 생성 끔 — 인증은 SecurityConfig에서 구성
+    exclude: org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration
   jpa:
     hibernate:
       ddl-auto: validate
+
+# OpenAPI 명세와 Swagger UI는 기본 비활성 — local 프로필과 OpenApiSpecTest에서만 켠다
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

@@ -2,6 +2,7 @@
 .idea/
 .vscode/*
 !.vscode/launch.json
+!.vscode/extensions.json
 *.iml
 
 # OS
@@ -12,3 +13,6 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# 문서
+docs/api-conventions.md
