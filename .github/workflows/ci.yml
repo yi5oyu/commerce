@@ -76,7 +76,7 @@ jobs:
           npm run gen:api
           git diff --exit-code -- lib/api/schema.d.ts || { echo "::error::npm run gen:api 실행 후 frontend/lib/api/schema.d.ts를 커밋하세요"; exit 1; }
       - run: npm run lint
-      - run: npx tsc --noEmit
+      - run: npm run typecheck
       - run: npm run build
 
   # main 보호 규칙의 필수 검사

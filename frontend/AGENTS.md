@@ -18,7 +18,7 @@ Run from `frontend/` (Node 24, see `.nvmrc`).
 
 - Build: `npm run build`
 - Lint: `npm run lint`
-- Type check: `npx tsc --noEmit`
+- Type check: `npm run typecheck` (`next typegen` first — CI has no `next-env.d.ts` / `.next` types)
 - Test: (none yet — no test runner installed)
 - Run locally: `npm run dev` — http://localhost:3000; `/api/*` is proxied to Spring at `localhost:8080` in development
 - Regenerate API types: `npm run gen:api` — `../backend/openapi.json` → `lib/api/schema.d.ts` (generated, do not edit by hand)
